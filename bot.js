@@ -29,7 +29,6 @@ client.on('message', message => {
        Discord.RichEmbed()
        .setColor('RANDOM')
        .setTitle('Broadcast')
-       .addField('Server', message.guild.name)
        .addField('Sender', message.author.username)
        .addField('Message', args)
        .setThumbnail(message.author.avatarURL)
