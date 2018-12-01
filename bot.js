@@ -102,7 +102,7 @@ if(ra3d.content.startsWith(prefix + 'ccolors')) {
         channel.send({embed : embed});
         })
 client.on('message', message => {
-const prefix = "W";
+const prefix = "S";
   if (message.author.kick) return;
   if (!message.content.startsWith(prefix)) return;
 
