@@ -5,13 +5,6 @@ var prefix = "S";
 var dat = JSON.parse("{}");
 
 
-client.on('message', message => {
-
-
-  if (!message.content.startsWith(prefix)) return;
-  var args = message.content.split(' ').slice(1);
-  var argresult = args.join(' ');
-  if (message.author.id ==461059496861630465) return;
 
 
 client.on('ready', () => {
