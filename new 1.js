@@ -50,4 +50,4 @@ if (message.author.id !== '407695930750402561','294980175253209089') return mess
  });
  
  
- 
+ client.login(process.env.BOT_TOKEN);
