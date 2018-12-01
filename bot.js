@@ -47,8 +47,10 @@ client.on('message', message => {
 
 
 client.on("message", message => {
+    var prefix = "S"; // غير هنا حط البرفكس
+ 
             var args = message.content.substring(prefix.length).split(" ");
-            if (message.content.startsWith(prefix + "clear")) {
+            if (message.content.startsWith(prefix + "مسح")) {
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('⚠ | **ليس لديك صلاحيات**');
         var msg;
         msg = parseInt();
@@ -59,10 +61,12 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "Plus Bot"
+          text: "F5AmEh.bot" // غير هنا حط اسم البوت
         }
-      }}).then(msg => {msg.delete(100000)});
+      }}).then(msg => {msg.delete(3000)});
                           }
+
+     
 });
 
 
